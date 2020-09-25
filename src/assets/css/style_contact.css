@@ -1,0 +1,60 @@
+.info-col, .message-col {
+    margin-top: 20px;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.contact-icon {
+    margin-right: 20px;
+}
+.contact-icon i {
+    font-size: 30px;
+    color: #fd9644;
+}
+.contact-info h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-info p {
+    font-style: italic;
+}
+.comment-form-name input[type="text"], 
+.comment-form-email input[type="email"], .comment-form-textarea textarea {
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    color: #666666;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 100%;
+}
+.comment-form-name input[type="text"]:focus,
+.comment-form-email input[type="email"]:focus,
+.comment-form-textarea textarea:focus {
+    outline: none;
+    border-color: rgba(255 165 0 / 0.8); 
+}
+.submit button {
+    font-family: 'Roboto' ,sans-serif;
+    font-weight: 600;
+    width: 190px;
+    height: 48px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #fd9644;
+    color: white;
+    border: none;  
+}
+.submit button:hover {
+    background-color: #db9861;
+}
+.action {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.map {
+    margin-bottom: 50px;
+}

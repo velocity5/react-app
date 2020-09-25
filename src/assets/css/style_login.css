@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto' ,sans-serif;
+}
+/* tab login signup*/
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.box {
+    display: block;
+}
+.logo-img {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.wrap-form {
+    max-width: 300px;
+}
+.nav-pills .nav-link {
+    color: #000;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+    background: #fd9644;
+}
+
+.inputGroup {
+    top: 30px;
+    position: absolute;
+    width: 100%;
+    transition: all .4s ease;
+}
+.inputField {
+    padding: 10px;
+    margin: 5px -15px;
+    border-radius: 3px;
+    border: 1px solid #bdc3c7;
+    outline: none;
+    position: relative;
+}
+.inputField:focus {
+    border-color: rgba(255 165 0 / 0.8);
+}
+.pwd-section {
+    position: relative;
+}
+.eyeConLog {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+.eyeConSign {
+    position: absolute;
+    right: 10%;
+    top: 34%;
+}
+#btnLogin, #btnSignup {
+    width: 216px;
+    padding: 10px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    background: #fd9644;
+    color: #f7f1e3;
+    border: 0;
+    outline: none;
+}
+#btnLogin {
+    transform: translate(-12px, -20px);
+}
+#btnSignup {
+    transform: translate(-12px, 0);
+}
+#btnLogin:hover, #btnSignup:hover {
+    background: #fcaa67;
+}
+#remember_me {
+    margin: 10px 0 30px -13px;
+}
+.forgot-pwd::before {
+    content: '\f059';
+    font-family: "Font Awesome 5 Free";
+    margin-right: 2px;
+}
+.forgotBox {
+    text-align: center;
+}
+a.forgot-pwd {
+    text-decoration: none;
+    font-size: 13px;
+}

@@ -1,0 +1,118 @@
+.progressBarTotal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.progressbar {
+    counter-reset: step;
+    padding: 0;
+}
+.progressbar li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    width: calc(100%/3);
+}
+.progressbar li:before {
+    background: #fff;
+    border: 2px solid #bebebe;
+    border-radius: 50%;
+    color: #bebebe;
+    content: counter(step);
+    counter-increment: step;
+    display: block;
+    font-weight: 700;
+    height: 30px;
+    line-height: 27px;
+    margin: 0 auto 10px;
+    width: 30px;
+    text-align: center;
+}
+.progressbar li:after {
+    background: #bebebe;
+    content: "";
+    height: 4px;
+    left: -50%;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    z-index: -1;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active:after,
+.progressbar li.complete:after {
+  background: #ff9f43;
+}
+.progressbar li.active:before,
+.progressbar li.complete:before {
+  background: #ff9f43;
+  border-color: #ff9f43;
+  color: #fff;
+}
+.progressbar li.active {
+    color: #ff9f43;
+}
+/* address form */
+.selectBox {
+    border-radius: 3px;
+    border-color: #dde1e6;
+    padding: 5px 10px;
+    color: #737780;
+}
+.fieldContain input:focus, .fieldContain select:focus,
+.fieldContain .note:focus {
+    border-color: rgba(255 165 0 / 0.8);
+    outline: none;
+}
+.selectContain {
+    display: flex;
+    flex-direction: column;
+}
+.dropArrow {
+    position: absolute;
+    left: calc(100% - 35px);
+    font-size: 13px;
+    color: grey;
+}
+
+.dropCity {
+    top: calc(100% - 66%);
+}
+.dropDst {
+    top: calc(100% - 53%);
+}
+.dropCommune {
+    top: calc(100% - 40%);
+}
+.note {
+    background: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.error {
+    color: crimson;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.processBtn {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    padding: 10px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    color: white;
+    background: #fd9644;
+    transition: all 0.3s ease;
+}
+a.processBtn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
